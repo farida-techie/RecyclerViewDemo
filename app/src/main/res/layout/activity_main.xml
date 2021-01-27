@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:viewBindingIgnore="true"
+        tools:context=".MainActivity">
+        <ImageView
+            android:elevation="15dp"
+            android:src="@drawable/fuits"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+        <TextView
+            android:elevation="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_margin="5dp"
+            android:background="@color/purple_500"
+            android:text="@string/fruits_and_calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler"
+        android:layout_weight="1"
+        android:minWidth="1dp"
+        tools:listitem="@layout/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>
+    </ScrollView>
+
+</layout>
